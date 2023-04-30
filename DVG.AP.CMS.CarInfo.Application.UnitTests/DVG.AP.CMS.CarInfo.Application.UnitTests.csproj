@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DVG.AP.CMS.CarInfo.TestBase\DVG.AP.CMS.CarInfo.TestBase.csproj" />
+    <ProjectReference Include="..\src\Core\DVG.AP.Cms.CarInfo.Application\DVG.AP.Cms.CarInfo.Application.csproj" />
+    <ProjectReference Include="..\src\Infrastructure\DVG.AP.Cms.CarInfo.Persistence\DVG.AP.Cms.CarInfo.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Features\NewCarBox\Commands\SetDetails\" />
+    <Folder Include="Features\NewCarBrand\Queries\Filter\" />
+    <Folder Include="Mocks\ApplicationServices\" />
+    <Folder Include="Mocks\Factories\" />
+  </ItemGroup>
+
+</Project>

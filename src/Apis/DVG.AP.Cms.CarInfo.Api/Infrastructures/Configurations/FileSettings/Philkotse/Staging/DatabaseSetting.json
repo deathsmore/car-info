@@ -1,0 +1,14 @@
+{
+  "ConnectionStrings": {
+    //    "CommonDb": "Server=2.2.2.33;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=beta_autoportal_common_phil;",
+    //    "DBCarInfo": "Server=2.2.2.33;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=beta_autoportal_carinfo_phil;",
+    //    "DBPromotion": "Server=2.2.2.33;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=beta_autoportal_promotion_phil;",
+    "CommonDb": "Server=2.2.2.33;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=product_autoportal_common_phil;",
+    "DBCarInfo": "Server=2.2.2.33;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=product_autoportal_carinfo_phil;",
+    "DBPromotion": "Server=2.2.2.33;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=product_autoportal_promotion_phil;",
+    "UserManagerDb": "Data Source=192.168.201.52;Initial Catalog=BanXeHoi;Persist Security Info=True;User ID=bxh_web;Password=8L5rCcIrHA6ka7WOOW6F;",
+    "CommandTimeout": 320
+  }
+}
+
+//"IdentityServerDomain": "https://beta-is4new-admin.nextgen-global.com"

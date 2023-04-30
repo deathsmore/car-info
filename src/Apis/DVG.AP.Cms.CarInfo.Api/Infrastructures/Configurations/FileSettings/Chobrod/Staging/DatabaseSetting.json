@@ -1,0 +1,9 @@
+{
+  "ConnectionStrings": {
+    "CommonDb": "Server=2.2.2.150;Port=5432;User Id=user_admin;Password=user_admin;Database=beta_autoportal_common_chobrod;",
+    "DBCarInfo": "Server=2.2.2.150;Port=5432;User Id=user_admin;Password=user_admin;Database=beta_autoportal_carinfo_chobrod;",
+    "DBPromotion": "Server=2.2.2.150;Port=5432;User Id=user_admin;Password=user_admin;Database=beta_autoportal_promotion_chobrod;",
+    "UserManagerDb": "Server=2.2.2.150;Port=5432;User Id=user_admin;Password=user_admin;Database=one2car;",
+    "CommandTimeout": 320
+  }
+}

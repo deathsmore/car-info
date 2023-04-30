@@ -1,0 +1,43 @@
+{
+  "Cache": {
+    "Redis": {
+      "Data": {
+        "ServerList": [
+          {
+            "Host": "172.16.0.66",
+            "Port": 6388
+          },
+          {
+            "Host": "172.16.0.66",
+            "Port": 6389
+          }
+        ],
+        "Server": "172.16.0.66",
+        "Port": 6388,
+        "Database": 5,
+        "Timeout": 600,
+        "Name": "NewCore"
+      },
+      "Session": {
+        "Server": "172.16.0.66",
+        "Port": 6392,
+        "Database": 9,
+        "Timeout": 600,
+        "Name": "NewCore-SessionStorage"
+      },
+      "MaxLengOfValueForMonitor": 30000
+    },
+    "CacheData": {
+      "Implementation": 0,
+      //      2: redis, 1: memcache, default: nocache
+      "KeyPrefix": "newcore_cms_data"
+    },
+    "TimeToLiveInMinutes": {
+      "ShortTime": 30,
+      "MediumTime": 60,
+      "LongTime": 180,
+      "OneDay": 1440,
+      "TwoDays": 2880
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "ConnectionStrings": {
+    "CommonDb": "Server=2.2.2.35;Port=5000;User Id=user_admin;Password=7D-D0-6C-42-CF-07;Database=production_autoportal_common_chobrod;",
+    "DBCarInfo": "Server=2.2.2.35;Port=5000;User Id=user_admin;Password=7D-D0-6C-42-CF-07;Database=production_autoportal_carinfo_chobrod;",
+    "DBPromotion": "Server=2.2.2.35;Port=5000;User Id=user_admin;Password=7D-D0-6C-42-CF-07;Database=production_autoportal_promotion_chobrod;",
+    "UserManagerDb": "Server=2.2.2.35;Port=5000;User Id=user_admin;Password=7D-D0-6C-42-CF-07;Database=one2car;",
+    "CommandTimeout": 320
+  }
+}

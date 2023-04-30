@@ -1,0 +1,1001 @@
+
+
+[07:29:48 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: idsrv signed in.
+
+[07:29:49 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /.well-known/openid-configuration from origin: https://beta-new-admin.nextgen-global.com
+
+[07:29:49 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:29:49 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:29:49 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /.well-known/openid-configuration matched to endpoint type Discovery
+
+[07:29:49 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+
+[07:29:49 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+
+[07:29:49 Debug] IdentityServer4.Endpoints.DiscoveryEndpoint
+Start discovery request
+
+[07:29:49 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://beta-new-admin.nextgen-global.com
+
+[07:29:49 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:29:49 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:29:49 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+
+[07:29:49 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+
+[07:29:49 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+
+[07:29:49 Debug] IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+Start key discovery request
+
+[07:29:49 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /connect/token from origin: https://beta-new-admin.nextgen-global.com
+
+[07:29:49 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:29:49 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:29:49 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/token matched to endpoint type Token
+
+[07:29:49 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+
+[07:29:49 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+
+[07:29:49 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Start token request.
+
+[07:29:49 Debug] IdentityServer4.Validation.ClientSecretValidator
+Start client validation
+
+[07:29:49 Debug] IdentityServer4.Validation.BasicAuthenticationSecretParser
+Start parsing Basic Authentication secret
+
+[07:29:49 Debug] IdentityServer4.Validation.PostBodySecretParser
+Start parsing for secret in post body
+
+[07:29:49 Debug] IdentityServer4.Validation.PostBodySecretParser
+client id without secret found
+
+[07:29:49 Debug] IdentityServer4.Validation.ISecretsListParser
+Parser found secret: PostBodySecretParser
+
+[07:29:49 Debug] IdentityServer4.Validation.ISecretsListParser
+Secret id found: DVG.AutoPortal.CMS.Spa
+
+[07:29:49 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:29:49 Debug] IdentityServer4.Validation.ClientSecretValidator
+Public Client - skipping secret validation success
+
+[07:29:49 Debug] IdentityServer4.Validation.ClientSecretValidator
+Client validation success
+
+[07:29:49 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start token request validation
+
+[07:29:49 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start validation of authorization code token request
+
+[07:29:49 Debug] IdentityServer4.Validation.TokenRequestValidator
+Client required a proof key for code exchange. Starting PKCE validation
+
+[07:29:49 Debug] IdentityServer4.Validation.TokenRequestValidator
+Validation of authorization code token request success
+
+[07:29:49 Information] IdentityServer4.Validation.TokenRequestValidator
+Token request validation success, {"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "GrantType": "authorization_code", "Scopes": null, "AuthorizationCode": "52E0C0F5E150642E40CF6176CF88372C616686A4D789AB388F3DFB769209F835", "RefreshToken": null, "UserName": null, "AuthenticationContextReferenceClasses": null, "Tenant": null, "IdP": null, "Raw": {"grant_type": "authorization_code", "code": "52E0C0F5E150642E40CF6176CF88372C616686A4D789AB388F3DFB769209F835", "redirect_uri": "https://beta-new-admin.nextgen-global.com", "code_verifier": "bk9QUWhWRE5WemdjZ35DLTMuei5MVGZHRDBQY1J1RENfOUlMYXhFSDM0UW5v", "client_id": "DVG.AutoPortal.CMS.Spa"}, "$type": "TokenRequestValidationLog"}
+
+[07:29:49 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:29:49 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for access token for client: DVG.AutoPortal.CMS.Spa
+
+[07:29:49 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for access token for subject: 53
+
+[07:29:49 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Creating refresh token
+
+[07:29:49 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Setting a sliding lifetime: 1296000
+
+[07:29:49 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:29:49 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for identity token for subject: 53 and client: DVG.AutoPortal.CMS.Spa
+
+[07:29:49 Debug] IdentityServer4.Services.DefaultClaimsService
+In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+
+[07:29:49 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Token request success.
+
+[07:31:25 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /.well-known/openid-configuration from origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:25 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:31:25 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:25 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /.well-known/openid-configuration matched to endpoint type Discovery
+
+[07:31:25 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+
+[07:31:25 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+
+[07:31:25 Debug] IdentityServer4.Endpoints.DiscoveryEndpoint
+Start discovery request
+
+[07:31:25 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:25 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:31:25 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:25 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+
+[07:31:25 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+
+[07:31:25 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+
+[07:31:25 Debug] IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+Start key discovery request
+
+[07:31:25 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/authorize matched to endpoint type Authorize
+
+[07:31:25 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+
+[07:31:25 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+
+[07:31:25 Debug] IdentityServer4.Endpoints.AuthorizeEndpoint
+Start authorize request
+
+[07:31:25 Debug] IdentityServer4.Endpoints.AuthorizeEndpoint
+No user present in authorize request
+
+[07:31:25 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Start authorize request protocol validation
+
+[07:31:25 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:31:25 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Checking for PKCE parameters
+
+[07:31:25 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+
+[07:31:25 Debug] IdentityServer4.Endpoints.AuthorizeEndpoint
+ValidatedAuthorizeRequest
+{"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "RedirectUri": "https://beta-new-admin.nextgen-global.com", "AllowedRedirectUris": ["https://beta-new-admin.nextgen-global.com"], "SubjectId": "anonymous", "ResponseType": "code", "ResponseMode": "query", "GrantType": "authorization_code", "RequestedScopes": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "State": "fjFpWWs1RWxKYlhFaUtDWHFHZn5ldTJBWmFua1AydVR0M2MwV1VBan5ELWVk", "UiLocales": null, "Nonce": "fjFpWWs1RWxKYlhFaUtDWHFHZn5ldTJBWmFua1AydVR0M2MwV1VBan5ELWVk", "AuthenticationContextReferenceClasses": null, "DisplayMode": null, "PromptMode": "", "MaxAge": null, "LoginHint": null, "SessionId": "", "Raw": {"response_type": "code", "client_id": "DVG.AutoPortal.CMS.Spa", "state": "fjFpWWs1RWxKYlhFaUtDWHFHZn5ldTJBWmFua1AydVR0M2MwV1VBan5ELWVk", "redirect_uri": "https://beta-new-admin.nextgen-global.com", "scope": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "code_challenge": "NyY1bqkWpDDJTBXmYFvem5J5rlyhwAgnMjkyCC2zShw", "code_challenge_method": "S256", "nonce": "fjFpWWs1RWxKYlhFaUtDWHFHZn5ldTJBWmFua1AydVR0M2MwV1VBan5ELWVk"}, "$type": "AuthorizeRequestValidationLog"}
+
+[07:31:25 Information] IdentityServer4.ResponseHandling.AuthorizeInteractionResponseGenerator
+Showing login: User is not authenticated
+
+[07:31:25 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Start authorize request protocol validation
+
+[07:31:25 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:31:25 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Checking for PKCE parameters
+
+[07:31:25 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+
+[07:31:25 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:31:40 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+
+[07:31:40 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Start authorize request protocol validation
+
+[07:31:40 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:31:40 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Checking for PKCE parameters
+
+[07:31:40 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+
+[07:31:40 Debug] IdentityServer4.Hosting.IdentityServerAuthenticationService
+Augmenting SignInContext
+
+[07:31:40 Debug] IdentityServer4.Hosting.IdentityServerAuthenticationService
+Adding idp claim with value: local
+
+[07:31:40 Debug] IdentityServer4.Hosting.IdentityServerAuthenticationService
+Adding amr claim with value: pwd
+
+[07:31:40 Debug] IdentityServer4.Hosting.IdentityServerAuthenticationService
+Adding auth_time claim with value: 1659598300
+
+[07:31:40 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: idsrv signed in.
+
+[07:31:40 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/authorize/callback matched to endpoint type Authorize
+
+[07:31:40 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+
+[07:31:40 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+
+[07:31:40 Debug] IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+Start authorize callback request
+
+[07:31:40 Debug] IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+User in authorize request: 53
+
+[07:31:40 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Start authorize request protocol validation
+
+[07:31:40 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:31:40 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Checking for PKCE parameters
+
+[07:31:40 Debug] IdentityServer4.Validation.AuthorizeRequestValidator
+Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+
+[07:31:40 Debug] IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+ValidatedAuthorizeRequest
+{"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "RedirectUri": "https://beta-new-admin.nextgen-global.com", "AllowedRedirectUris": ["https://beta-new-admin.nextgen-global.com"], "SubjectId": "53", "ResponseType": "code", "ResponseMode": "query", "GrantType": "authorization_code", "RequestedScopes": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "State": "fjFpWWs1RWxKYlhFaUtDWHFHZn5ldTJBWmFua1AydVR0M2MwV1VBan5ELWVk", "UiLocales": null, "Nonce": "fjFpWWs1RWxKYlhFaUtDWHFHZn5ldTJBWmFua1AydVR0M2MwV1VBan5ELWVk", "AuthenticationContextReferenceClasses": null, "DisplayMode": null, "PromptMode": "", "MaxAge": null, "LoginHint": null, "SessionId": "6197D1143566485C9C8C355D99B942CD", "Raw": {"response_type": "code", "client_id": "DVG.AutoPortal.CMS.Spa", "state": "fjFpWWs1RWxKYlhFaUtDWHFHZn5ldTJBWmFua1AydVR0M2MwV1VBan5ELWVk", "redirect_uri": "https://beta-new-admin.nextgen-global.com", "scope": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "code_challenge": "NyY1bqkWpDDJTBXmYFvem5J5rlyhwAgnMjkyCC2zShw", "code_challenge_method": "S256", "nonce": "fjFpWWs1RWxKYlhFaUtDWHFHZn5ldTJBWmFua1AydVR0M2MwV1VBan5ELWVk"}, "$type": "AuthorizeRequestValidationLog"}
+
+[07:31:40 Debug] IdentityServer4.Services.DefaultConsentService
+Client is configured to not require consent, no consent is required
+
+[07:31:40 Debug] IdentityServer4.ResponseHandling.AuthorizeResponseGenerator
+Creating Authorization Code Flow response.
+
+[07:31:40 Debug] IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+Authorize endpoint response
+{"SubjectId": "53", "ClientId": "DVG.AutoPortal.CMS.Spa", "RedirectUri": "https://beta-new-admin.nextgen-global.com", "State": "fjFpWWs1RWxKYlhFaUtDWHFHZn5ldTJBWmFua1AydVR0M2MwV1VBan5ELWVk", "Scope": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "Error": null, "ErrorDescription": null, "$type": "AuthorizeResponseLog"}
+
+[07:31:40 Debug] IdentityServer4.Hosting.IdentityServerAuthenticationService
+Augmenting SignInContext
+
+[07:31:40 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: idsrv signed in.
+
+[07:31:41 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /.well-known/openid-configuration from origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:41 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:31:41 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:41 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /.well-known/openid-configuration matched to endpoint type Discovery
+
+[07:31:41 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+
+[07:31:41 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+
+[07:31:41 Debug] IdentityServer4.Endpoints.DiscoveryEndpoint
+Start discovery request
+
+[07:31:42 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:42 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:31:42 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:42 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+
+[07:31:42 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+
+[07:31:42 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+
+[07:31:42 Debug] IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+Start key discovery request
+
+[07:31:42 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /connect/token from origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:42 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:31:42 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:31:42 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/token matched to endpoint type Token
+
+[07:31:42 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+
+[07:31:42 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+
+[07:31:42 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Start token request.
+
+[07:31:42 Debug] IdentityServer4.Validation.ClientSecretValidator
+Start client validation
+
+[07:31:42 Debug] IdentityServer4.Validation.BasicAuthenticationSecretParser
+Start parsing Basic Authentication secret
+
+[07:31:42 Debug] IdentityServer4.Validation.PostBodySecretParser
+Start parsing for secret in post body
+
+[07:31:42 Debug] IdentityServer4.Validation.PostBodySecretParser
+client id without secret found
+
+[07:31:42 Debug] IdentityServer4.Validation.ISecretsListParser
+Parser found secret: PostBodySecretParser
+
+[07:31:42 Debug] IdentityServer4.Validation.ISecretsListParser
+Secret id found: DVG.AutoPortal.CMS.Spa
+
+[07:31:42 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:31:42 Debug] IdentityServer4.Validation.ClientSecretValidator
+Public Client - skipping secret validation success
+
+[07:31:42 Debug] IdentityServer4.Validation.ClientSecretValidator
+Client validation success
+
+[07:31:42 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start token request validation
+
+[07:31:42 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start validation of authorization code token request
+
+[07:31:42 Debug] IdentityServer4.Validation.TokenRequestValidator
+Client required a proof key for code exchange. Starting PKCE validation
+
+[07:31:42 Debug] IdentityServer4.Validation.TokenRequestValidator
+Validation of authorization code token request success
+
+[07:31:42 Information] IdentityServer4.Validation.TokenRequestValidator
+Token request validation success, {"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "GrantType": "authorization_code", "Scopes": null, "AuthorizationCode": "70778B2AAA36F8EABA6618879F2B460B4FF53FE36A4421C5515B5F4D213D7ACC", "RefreshToken": null, "UserName": null, "AuthenticationContextReferenceClasses": null, "Tenant": null, "IdP": null, "Raw": {"grant_type": "authorization_code", "code": "70778B2AAA36F8EABA6618879F2B460B4FF53FE36A4421C5515B5F4D213D7ACC", "redirect_uri": "https://beta-new-admin.nextgen-global.com", "code_verifier": "ZlVJeENwZUJ6d0Ixfk9oS3BuOUYxME5pWDRYZVduZ2NxTWRhTldjV09qNnJR", "client_id": "DVG.AutoPortal.CMS.Spa"}, "$type": "TokenRequestValidationLog"}
+
+[07:31:42 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:31:42 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for access token for client: DVG.AutoPortal.CMS.Spa
+
+[07:31:42 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for access token for subject: 53
+
+[07:31:42 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Creating refresh token
+
+[07:31:42 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Setting a sliding lifetime: 1296000
+
+[07:31:42 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:31:42 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for identity token for subject: 53 and client: DVG.AutoPortal.CMS.Spa
+
+[07:31:42 Debug] IdentityServer4.Services.DefaultClaimsService
+In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+
+[07:31:42 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Token request success.
+
+[07:33:37 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /connect/token from origin: https://beta-new-admin.nextgen-global.com
+
+[07:33:37 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:33:37 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:33:37 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/token matched to endpoint type Token
+
+[07:33:37 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+
+[07:33:37 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+
+[07:33:37 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Start token request.
+
+[07:33:37 Debug] IdentityServer4.Validation.ClientSecretValidator
+Start client validation
+
+[07:33:37 Debug] IdentityServer4.Validation.BasicAuthenticationSecretParser
+Start parsing Basic Authentication secret
+
+[07:33:37 Debug] IdentityServer4.Validation.PostBodySecretParser
+Start parsing for secret in post body
+
+[07:33:37 Debug] IdentityServer4.Validation.PostBodySecretParser
+client id without secret found
+
+[07:33:37 Debug] IdentityServer4.Validation.ISecretsListParser
+Parser found secret: PostBodySecretParser
+
+[07:33:37 Debug] IdentityServer4.Validation.ISecretsListParser
+Secret id found: DVG.AutoPortal.CMS.Spa
+
+[07:33:37 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:33:37 Debug] IdentityServer4.Validation.ClientSecretValidator
+Public Client - skipping secret validation success
+
+[07:33:37 Debug] IdentityServer4.Validation.ClientSecretValidator
+Client validation success
+
+[07:33:37 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start token request validation
+
+[07:33:37 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start validation of refresh token request
+
+[07:33:37 Debug] IdentityServer4.Validation.TokenRequestValidator
+Validation of refresh token request success
+
+[07:33:37 Information] IdentityServer4.Validation.TokenRequestValidator
+Token request validation success, {"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "GrantType": "refresh_token", "Scopes": null, "AuthorizationCode": null, "RefreshToken": "FCAB79571CFF75433B8BC190E6FCE67B84347E112AC0165CEAA72319CD45547E", "UserName": null, "AuthenticationContextReferenceClasses": null, "Tenant": null, "IdP": null, "Raw": {"grant_type": "refresh_token", "scope": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "refresh_token": "***REDACTED***", "client_id": "DVG.AutoPortal.CMS.Spa"}, "$type": "TokenRequestValidationLog"}
+
+[07:33:37 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Updating refresh token
+
+[07:33:37 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Token usage is one-time only. Setting current handle as consumed, and generating new handle
+
+[07:33:37 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Refresh token expiration is sliding - extending lifetime
+
+[07:33:37 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Current lifetime: 228
+
+[07:33:37 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+New lifetime: 1296228
+
+[07:33:37 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Created refresh token in store
+
+[07:33:37 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for identity token for subject: 53 and client: DVG.AutoPortal.CMS.Spa
+
+[07:33:37 Debug] IdentityServer4.Services.DefaultClaimsService
+In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+
+[07:33:37 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Token request success.
+
+[07:35:30 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /connect/token from origin: https://beta-new-admin.nextgen-global.com
+
+[07:35:30 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:35:30 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:35:30 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/token matched to endpoint type Token
+
+[07:35:30 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+
+[07:35:30 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+
+[07:35:30 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Start token request.
+
+[07:35:30 Debug] IdentityServer4.Validation.ClientSecretValidator
+Start client validation
+
+[07:35:30 Debug] IdentityServer4.Validation.BasicAuthenticationSecretParser
+Start parsing Basic Authentication secret
+
+[07:35:30 Debug] IdentityServer4.Validation.PostBodySecretParser
+Start parsing for secret in post body
+
+[07:35:30 Debug] IdentityServer4.Validation.PostBodySecretParser
+client id without secret found
+
+[07:35:30 Debug] IdentityServer4.Validation.ISecretsListParser
+Parser found secret: PostBodySecretParser
+
+[07:35:30 Debug] IdentityServer4.Validation.ISecretsListParser
+Secret id found: DVG.AutoPortal.CMS.Spa
+
+[07:35:30 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:35:30 Debug] IdentityServer4.Validation.ClientSecretValidator
+Public Client - skipping secret validation success
+
+[07:35:30 Debug] IdentityServer4.Validation.ClientSecretValidator
+Client validation success
+
+[07:35:30 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start token request validation
+
+[07:35:30 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start validation of refresh token request
+
+[07:35:30 Debug] IdentityServer4.Validation.TokenRequestValidator
+Validation of refresh token request success
+
+[07:35:30 Information] IdentityServer4.Validation.TokenRequestValidator
+Token request validation success, {"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "GrantType": "refresh_token", "Scopes": null, "AuthorizationCode": null, "RefreshToken": "247C14FE27B59080790987BC6F61E4D82973796050CC151ADD3EDCEA18631090", "UserName": null, "AuthenticationContextReferenceClasses": null, "Tenant": null, "IdP": null, "Raw": {"grant_type": "refresh_token", "scope": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "refresh_token": "***REDACTED***", "client_id": "DVG.AutoPortal.CMS.Spa"}, "$type": "TokenRequestValidationLog"}
+
+[07:35:30 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Updating refresh token
+
+[07:35:30 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Token usage is one-time only. Setting current handle as consumed, and generating new handle
+
+[07:35:30 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Refresh token expiration is sliding - extending lifetime
+
+[07:35:30 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Current lifetime: 228
+
+[07:35:30 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+New lifetime: 1296228
+
+[07:35:30 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Created refresh token in store
+
+[07:35:30 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for identity token for subject: 53 and client: DVG.AutoPortal.CMS.Spa
+
+[07:35:30 Debug] IdentityServer4.Services.DefaultClaimsService
+In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+
+[07:35:30 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Token request success.
+
+[07:37:25 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /connect/token from origin: https://beta-new-admin.nextgen-global.com
+
+[07:37:25 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:37:25 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:37:25 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/token matched to endpoint type Token
+
+[07:37:25 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+
+[07:37:25 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+
+[07:37:25 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Start token request.
+
+[07:37:25 Debug] IdentityServer4.Validation.ClientSecretValidator
+Start client validation
+
+[07:37:25 Debug] IdentityServer4.Validation.BasicAuthenticationSecretParser
+Start parsing Basic Authentication secret
+
+[07:37:25 Debug] IdentityServer4.Validation.PostBodySecretParser
+Start parsing for secret in post body
+
+[07:37:25 Debug] IdentityServer4.Validation.PostBodySecretParser
+client id without secret found
+
+[07:37:25 Debug] IdentityServer4.Validation.ISecretsListParser
+Parser found secret: PostBodySecretParser
+
+[07:37:25 Debug] IdentityServer4.Validation.ISecretsListParser
+Secret id found: DVG.AutoPortal.CMS.Spa
+
+[07:37:25 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:37:25 Debug] IdentityServer4.Validation.ClientSecretValidator
+Public Client - skipping secret validation success
+
+[07:37:25 Debug] IdentityServer4.Validation.ClientSecretValidator
+Client validation success
+
+[07:37:25 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start token request validation
+
+[07:37:25 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start validation of refresh token request
+
+[07:37:25 Debug] IdentityServer4.Validation.TokenRequestValidator
+Validation of refresh token request success
+
+[07:37:25 Information] IdentityServer4.Validation.TokenRequestValidator
+Token request validation success, {"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "GrantType": "refresh_token", "Scopes": null, "AuthorizationCode": null, "RefreshToken": "DF1343ECB7202DC5D17C9FC82C6A541661C812F0E3A8F72BC4C666F2A404960D", "UserName": null, "AuthenticationContextReferenceClasses": null, "Tenant": null, "IdP": null, "Raw": {"grant_type": "refresh_token", "scope": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "refresh_token": "***REDACTED***", "client_id": "DVG.AutoPortal.CMS.Spa"}, "$type": "TokenRequestValidationLog"}
+
+[07:37:25 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Updating refresh token
+
+[07:37:25 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Token usage is one-time only. Setting current handle as consumed, and generating new handle
+
+[07:37:25 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Refresh token expiration is sliding - extending lifetime
+
+[07:37:25 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Current lifetime: 456
+
+[07:37:25 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+New lifetime: 1296456
+
+[07:37:25 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Created refresh token in store
+
+[07:37:25 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for identity token for subject: 53 and client: DVG.AutoPortal.CMS.Spa
+
+[07:37:25 Debug] IdentityServer4.Services.DefaultClaimsService
+In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+
+[07:37:25 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Token request success.
+
+[07:39:18 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /connect/token from origin: https://beta-new-admin.nextgen-global.com
+
+[07:39:18 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:39:18 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:39:18 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/token matched to endpoint type Token
+
+[07:39:18 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+
+[07:39:18 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+
+[07:39:18 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Start token request.
+
+[07:39:18 Debug] IdentityServer4.Validation.ClientSecretValidator
+Start client validation
+
+[07:39:18 Debug] IdentityServer4.Validation.BasicAuthenticationSecretParser
+Start parsing Basic Authentication secret
+
+[07:39:18 Debug] IdentityServer4.Validation.PostBodySecretParser
+Start parsing for secret in post body
+
+[07:39:18 Debug] IdentityServer4.Validation.PostBodySecretParser
+client id without secret found
+
+[07:39:18 Debug] IdentityServer4.Validation.ISecretsListParser
+Parser found secret: PostBodySecretParser
+
+[07:39:18 Debug] IdentityServer4.Validation.ISecretsListParser
+Secret id found: DVG.AutoPortal.CMS.Spa
+
+[07:39:18 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:39:18 Debug] IdentityServer4.Validation.ClientSecretValidator
+Public Client - skipping secret validation success
+
+[07:39:18 Debug] IdentityServer4.Validation.ClientSecretValidator
+Client validation success
+
+[07:39:18 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start token request validation
+
+[07:39:18 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start validation of refresh token request
+
+[07:39:18 Debug] IdentityServer4.Validation.TokenRequestValidator
+Validation of refresh token request success
+
+[07:39:18 Information] IdentityServer4.Validation.TokenRequestValidator
+Token request validation success, {"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "GrantType": "refresh_token", "Scopes": null, "AuthorizationCode": null, "RefreshToken": "D268108007C71A8F91A7C48BEE3411F033F8D389AC5E0154A27BDF0B31AF3A5D", "UserName": null, "AuthenticationContextReferenceClasses": null, "Tenant": null, "IdP": null, "Raw": {"grant_type": "refresh_token", "scope": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "refresh_token": "***REDACTED***", "client_id": "DVG.AutoPortal.CMS.Spa"}, "$type": "TokenRequestValidationLog"}
+
+[07:39:18 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Updating refresh token
+
+[07:39:18 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Token usage is one-time only. Setting current handle as consumed, and generating new handle
+
+[07:39:18 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Refresh token expiration is sliding - extending lifetime
+
+[07:39:18 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Current lifetime: 456
+
+[07:39:18 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+New lifetime: 1296456
+
+[07:39:18 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Created refresh token in store
+
+[07:39:18 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for identity token for subject: 53 and client: DVG.AutoPortal.CMS.Spa
+
+[07:39:18 Debug] IdentityServer4.Services.DefaultClaimsService
+In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+
+[07:39:18 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Token request success.
+
+[07:41:13 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /connect/token from origin: https://beta-new-admin.nextgen-global.com
+
+[07:41:13 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:41:13 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:41:13 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/token matched to endpoint type Token
+
+[07:41:13 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+
+[07:41:13 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+
+[07:41:13 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Start token request.
+
+[07:41:13 Debug] IdentityServer4.Validation.ClientSecretValidator
+Start client validation
+
+[07:41:13 Debug] IdentityServer4.Validation.BasicAuthenticationSecretParser
+Start parsing Basic Authentication secret
+
+[07:41:13 Debug] IdentityServer4.Validation.PostBodySecretParser
+Start parsing for secret in post body
+
+[07:41:13 Debug] IdentityServer4.Validation.PostBodySecretParser
+client id without secret found
+
+[07:41:13 Debug] IdentityServer4.Validation.ISecretsListParser
+Parser found secret: PostBodySecretParser
+
+[07:41:13 Debug] IdentityServer4.Validation.ISecretsListParser
+Secret id found: DVG.AutoPortal.CMS.Spa
+
+[07:41:13 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:41:13 Debug] IdentityServer4.Validation.ClientSecretValidator
+Public Client - skipping secret validation success
+
+[07:41:13 Debug] IdentityServer4.Validation.ClientSecretValidator
+Client validation success
+
+[07:41:13 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start token request validation
+
+[07:41:13 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start validation of refresh token request
+
+[07:41:13 Debug] IdentityServer4.Validation.TokenRequestValidator
+Validation of refresh token request success
+
+[07:41:13 Information] IdentityServer4.Validation.TokenRequestValidator
+Token request validation success, {"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "GrantType": "refresh_token", "Scopes": null, "AuthorizationCode": null, "RefreshToken": "D305F3A2A1C3DD7FE22146CD2E632777BCEF9DA577965EF0F08EBE48AC5124FD", "UserName": null, "AuthenticationContextReferenceClasses": null, "Tenant": null, "IdP": null, "Raw": {"grant_type": "refresh_token", "scope": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "refresh_token": "***REDACTED***", "client_id": "DVG.AutoPortal.CMS.Spa"}, "$type": "TokenRequestValidationLog"}
+
+[07:41:13 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Updating refresh token
+
+[07:41:13 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Token usage is one-time only. Setting current handle as consumed, and generating new handle
+
+[07:41:13 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Refresh token expiration is sliding - extending lifetime
+
+[07:41:13 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Current lifetime: 684
+
+[07:41:13 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+New lifetime: 1296684
+
+[07:41:13 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Created refresh token in store
+
+[07:41:13 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for identity token for subject: 53 and client: DVG.AutoPortal.CMS.Spa
+
+[07:41:13 Debug] IdentityServer4.Services.DefaultClaimsService
+In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+
+[07:41:13 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Token request success.
+
+[07:45:01 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /connect/token from origin: https://beta-new-admin.nextgen-global.com
+
+[07:45:01 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:45:01 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:45:01 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /connect/token matched to endpoint type Token
+
+[07:45:01 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+
+[07:45:01 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+
+[07:45:01 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Start token request.
+
+[07:45:01 Debug] IdentityServer4.Validation.ClientSecretValidator
+Start client validation
+
+[07:45:01 Debug] IdentityServer4.Validation.BasicAuthenticationSecretParser
+Start parsing Basic Authentication secret
+
+[07:45:01 Debug] IdentityServer4.Validation.PostBodySecretParser
+Start parsing for secret in post body
+
+[07:45:01 Debug] IdentityServer4.Validation.PostBodySecretParser
+client id without secret found
+
+[07:45:01 Debug] IdentityServer4.Validation.ISecretsListParser
+Parser found secret: PostBodySecretParser
+
+[07:45:01 Debug] IdentityServer4.Validation.ISecretsListParser
+Secret id found: DVG.AutoPortal.CMS.Spa
+
+[07:45:01 Debug] IdentityServer4.Stores.ValidatingClientStore
+client configuration validation for client DVG.AutoPortal.CMS.Spa succeeded.
+
+[07:45:01 Debug] IdentityServer4.Validation.ClientSecretValidator
+Public Client - skipping secret validation success
+
+[07:45:01 Debug] IdentityServer4.Validation.ClientSecretValidator
+Client validation success
+
+[07:45:01 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start token request validation
+
+[07:45:01 Debug] IdentityServer4.Validation.TokenRequestValidator
+Start validation of refresh token request
+
+[07:45:01 Debug] IdentityServer4.Validation.TokenRequestValidator
+Validation of refresh token request success
+
+[07:45:01 Information] IdentityServer4.Validation.TokenRequestValidator
+Token request validation success, {"ClientId": "DVG.AutoPortal.CMS.Spa", "ClientName": "DVG AutoPortal CMS Client", "GrantType": "refresh_token", "Scopes": null, "AuthorizationCode": null, "RefreshToken": "CDD8653C9584767187A6CAA35534F31C7ABA764E6964FDF9F6DC9E8512A54B6F", "UserName": null, "AuthenticationContextReferenceClasses": null, "Tenant": null, "IdP": null, "Raw": {"grant_type": "refresh_token", "scope": "openid profile offline_access permission DVG.AutoPortal.CMS.CarInfo DVG.AutoPortal.CMS.Common DVG.AutoPortal.CMS.Promotion DVG.AutoPortal.CMS.Product", "refresh_token": "***REDACTED***", "client_id": "DVG.AutoPortal.CMS.Spa"}, "$type": "TokenRequestValidationLog"}
+
+[07:45:01 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Updating refresh token
+
+[07:45:01 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Token usage is one-time only. Setting current handle as consumed, and generating new handle
+
+[07:45:01 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Refresh token expiration is sliding - extending lifetime
+
+[07:45:01 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Current lifetime: 912
+
+[07:45:01 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+New lifetime: 1296912
+
+[07:45:01 Debug] IdentityServer4.Services.DefaultRefreshTokenService
+Created refresh token in store
+
+[07:45:01 Debug] IdentityServer4.Services.DefaultClaimsService
+Getting claims for identity token for subject: 53 and client: DVG.AutoPortal.CMS.Spa
+
+[07:45:01 Debug] IdentityServer4.Services.DefaultClaimsService
+In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+
+[07:45:01 Debug] IdentityServer4.Endpoints.TokenEndpoint
+Token request success.
+
+[07:47:59 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /.well-known/openid-configuration from origin: https://beta-new-admin.nextgen-global.com
+
+[07:47:59 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:47:59 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:47:59 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /.well-known/openid-configuration matched to endpoint type Discovery
+
+[07:47:59 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+
+[07:47:59 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+
+[07:47:59 Debug] IdentityServer4.Endpoints.DiscoveryEndpoint
+Start discovery request
+
+[07:47:59 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CORS request made for path: /.well-known/openid-configuration/jwks from origin: https://beta-new-admin.nextgen-global.com
+
+[07:47:59 Debug] IdentityServer4.Services.InMemoryCorsPolicyService
+Client list checked and origin: https://beta-new-admin.nextgen-global.com is allowed
+
+[07:47:59 Debug] IdentityServer4.Hosting.CorsPolicyProvider
+CorsPolicyService allowed origin: https://beta-new-admin.nextgen-global.com
+
+[07:47:59 Debug] IdentityServer4.Hosting.EndpointRouter
+Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+
+[07:47:59 Debug] IdentityServer4.Hosting.EndpointRouter
+Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+
+[07:47:59 Information] IdentityServer4.Hosting.IdentityServerMiddleware
+Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+
+[07:47:59 Debug] IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+Start key discovery request
+

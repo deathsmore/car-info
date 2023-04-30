@@ -1,0 +1,111 @@
+image: docker:stable
+services:
+  - docker:dind
+
+stages:
+  - build
+  - deploy
+  - build-static
+  - clean
+
+variables:
+  #DOCKER_HOST: tcp
+  DOCKER_DRIVER: overlay2
+  TESTING_WEB_IMAGE: newcore-cms-carinfo-api
+  STAGING_WEB_IMAGE: sg.registry.nextgen-global.com/ap_ecosystem/v1.cms/api/carinfo/staging
+  STAGING_OTO_WEB_IMAGE: registry.git.nextgen-global.com/autoportalnewcore/admin/carinfo/oto-staging
+  PRODUCTION_OTO_WEB_IMAGE: registry.git.nextgen-global.com/autoportalnewcore/admin/carinfo/oto-PRODUCTION
+  PRODUCT_WEB_IMAGE: sg.registry.nextgen-global.com/ap_ecosystem/v1.cms/api/carinfo
+  SITE_NAME: Philkotse
+
+newcore-testing (build-deploy):
+  stage: build
+  tags:
+    - testing-build
+  before_script:
+    # move-csproj.sh
+    - ls
+    - bash move-csproj.sh
+
+  script:
+    - ls
+    - docker build --build-arg SITE_NAME=$SITE_NAME --cache-from $TESTING_WEB_IMAGE:latest --tag  $TESTING_WEB_IMAGE:latest  . -f src/Apis/DVG.AP.Cms.CarInfo.Api/Dockerfiles/Dockerfile
+    - docker service update --force --image $TESTING_WEB_IMAGE:latest newcore-cms-carinfo-api
+  only:
+    - testing
+
+
+##############Oto
+newcore-oto-staging (build-deploy):
+  stage: build
+  tags:
+    - testing-build
+  before_script:
+    # move-csproj.sh
+    - ls
+    - bash move-csproj.sh
+    - docker login -u cicd -p admin123 registry.git.nextgen-global.com
+
+  script:
+    - ls
+    - docker build --build-arg SITE_NAME=$SITE_NAME --cache-from $STAGING_OTO_WEB_IMAGE:latest --tag  $STAGING_OTO_WEB_IMAGE:latest  . -f src/Apis/DVG.AP.Cms.CarInfo.Api/Dockerfiles/Staging.Oto.Dockerfile
+    - docker push $STAGING_OTO_WEB_IMAGE:latest
+  only:
+    - oto_staging
+
+newcore-oto-production (build-deploy):
+  stage: build
+  tags:
+    - testing-build
+  before_script:
+    # move-csproj.sh
+    - ls
+    - bash move-csproj.sh
+    - docker login -u cicd -p admin123 registry.git.nextgen-global.com
+
+  script:
+    - ls
+    - docker build --build-arg SITE_NAME=$SITE_NAME --cache-from $PRODUCTION_OTO_WEB_IMAGE:latest --tag  $PRODUCTION_OTO_WEB_IMAGE:latest  . -f src/Apis/DVG.AP.Cms.CarInfo.Api/Dockerfiles/Production.Oto.Dockerfile
+    - docker push $PRODUCTION_OTO_WEB_IMAGE:latest
+  only:
+    - oto_production
+  #####################Staging###
+
+newcore-staging (build):
+  stage: build
+  tags:
+    - staging-build
+  before_script:
+    # move-csproj.sh
+    - ls
+    - bash move-csproj.sh
+    - docker login -u ecosystem -p Admin123  sg.registry.nextgen-global.com
+  script:
+    - ls
+<<<<<<< HEAD
+    - docker build --build-arg SITE_NAME=$SITE_NAME --cache-from $STAGING_WEB_IMAGE:latest --tag  $STAGING_WEB_IMAGE:latest  . -f src/Apis/DVG.AP.Cms.CarInfo.Api/Dockerfiles/Staging.Dockerfile
+=======
+    - docker build --build-arg SITE_NAME=Cintamobil --cache-from $STAGING_WEB_IMAGE:latest --tag  $STAGING_WEB_IMAGE:latest  . -f src/Apis/DVG.AP.Cms.CarInfo.Api/Dockerfiles/Staging.Dockerfile
+    - docker push $STAGING_WEB_IMAGE:latest
+>>>>>>> 3e228ffcebbc0b899484a0232afd15cacca2c6f9
+    - docker service update --force --image $STAGING_WEB_IMAGE:latest beta-cms-carinfo-api
+  #    - docker service update --force --image $TESTING_WEB_IMAGE:latest fe-newcars-api
+  only:
+    - staging
+
+newcore-production (build):
+  stage: build
+  tags:
+    - testing-build
+  before_script:
+    # move-csproj.sh
+    - ls
+    - bash move-csproj.sh
+    - docker login -u ecosystem -p Admin123  sg.registry.nextgen-global.com
+
+  script:
+
+    - docker build --build-arg SITE_NAME=$SITE_NAME  --cache-from $PRODUCT_WEB_IMAGE/${SITE_NAME,,}/production:latest --tag  $PRODUCT_WEB_IMAGE/${SITE_NAME,,}/production:latest  . -f src/Apis/DVG.AP.Cms.CarInfo.Api/Dockerfiles/Production.Dockerfile
+    - docker push  $PRODUCT_WEB_IMAGE/${SITE_NAME,,}/production:latest
+  only:
+    - philkotse_production

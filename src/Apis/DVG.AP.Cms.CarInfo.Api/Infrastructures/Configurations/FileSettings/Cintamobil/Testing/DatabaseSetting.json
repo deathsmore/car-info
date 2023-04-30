@@ -1,0 +1,9 @@
+{
+  "ConnectionStrings": {
+    "CommonDb": "Server=172.16.0.7;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=autoportal_common;",
+    "DBCarInfo": "Server=172.16.0.7;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=autoportal_carinfo;",
+    "DBNewCarArticle": "Server=172.16.0.7;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=autoportal_newcararticle;",
+    "DBPromotion": "Server=172.16.0.7;Port=5432;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=autoportal_promotion;",
+    "CommandTimeout": 320
+  }
+}

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Dapper" Version="2.0.123" />
+        <PackageReference Include="DVG.AutoPortal.EFCore6" Version="1.0.0" />
+        <PackageReference Include="DVG.AutoPortal.Logging" Version="1.0.0.5" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.2" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+        <PackageReference Include="DVG.AutoPortal.Specification" Version="1.0.0" />
+        <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.18" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Core\DVG.AP.Cms.CarInfo.Application\DVG.AP.Cms.CarInfo.Application.csproj" />
+        <ProjectReference Include="..\..\Core\DVG.AP.Cms.CarInfo.Domain\DVG.AP.Cms.CarInfo.Domain.csproj" />
+    </ItemGroup>
+</Project>

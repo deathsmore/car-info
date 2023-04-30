@@ -1,0 +1,7 @@
+{
+  "ConnectionStrings": {
+    "CommonDb": "Server=2.2.2.80;Port=5000;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=indo_autoportal_common_beta;",
+    "DBCarInfo": "Server=2.2.2.80;Port=5000;User Id=team_cms_admin;Password=2yGyoG58iWx1a7qLdLJv;Database=indo_autoportal_carinfo_beta;",
+    "CommandTimeout": 320
+  }
+}

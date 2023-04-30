@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DVG.AutoPortal.Core" Version="1.0.0.5" />
+    <PackageReference Include="DVG.AutoPortal.Logging" Version="1.0.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\DVG.AP.Cms.CarInfo.Application\DVG.AP.Cms.CarInfo.Application.csproj" />
+  </ItemGroup>
+
+</Project>

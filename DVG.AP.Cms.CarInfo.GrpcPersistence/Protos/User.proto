@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "DVG.AP.Cms.Common.Api.Protos";
+
+service UserGrpc {
+  rpc Gets(UserFilterRequest) returns (UserFilterResponse);
+}
+
+message UserFilterRequest{
+  repeated int32 UserIds = 1;
+  bool IsPaging = 2;
+}
+message UserFilterResponse{
+  repeated UserVm Collections = 1;
+  int32 TotalCount = 2;
+}
+
+message UserVm {
+  int32 UserId = 1;
+  string UserName = 2;
+}

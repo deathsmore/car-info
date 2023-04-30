@@ -1,0 +1,140 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <DocumentationFile>bin\Debug\net6.0\DVG.AP.Cms.CarInfo.Api.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Remove="Infrastructures\Configurations\FileSettings\Philkotse\Development\appsettings.Development.json" />
+      <Content Update="Infrastructures\Configurations\FileSettings\Chobrod\Production\appsettings.Production.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="Infrastructures\Configurations\FileSettings\Chobrod\Production\DatabaseSetting.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="10.3.6" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
+        <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+        <PackageReference Include="MediatR" Version="9.0.0" />
+        <PackageReference Include="MicroElements.Swashbuckle.FluentValidation" Version="5.4.0" />
+        <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.1" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="DVG.AutoPortal.Logging" Version="1.0.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+        <PackageReference Include="NLog" Version="4.7.13" />
+        <PackageReference Include="NLog.Web" Version="4.14.0" />
+        <PackageReference Include="NLog.Web.AspNetCore" Version="4.14.0" />
+
+
+    </ItemGroup>
+    <ItemGroup>
+        <Content Update="Infrastructures\Configurations\FileSettings\Chobrod\Staging\appsettings.Staging.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Chobrod\Staging\DatabaseSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Development\CacheSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Development\DatabaseSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Production\appsettings.Production.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Production\CacheSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Production\DatabaseSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Staging\appsettings.Staging.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Staging\CacheSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Staging\DatabaseSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Testing\appsettings.Testing.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Testing\CacheSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Philkotse\Testing\DatabaseSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="nlog.config">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Development\CacheSetting.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Development\DatabaseSetting.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Testing\CacheSetting.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Testing\DatabaseSetting.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Testing\appsettings.Testing.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Staging\CacheSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Staging\DatabaseSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Staging\appsettings.Staging.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Production\appsettings.Production.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Production\CacheSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="Infrastructures\Configurations\FileSettings\Oto\Production\DatabaseSetting.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    <ItemGroup>
+        <_ContentIncludedByDefault Remove="Configurations\FileSettings\Oto\Development\CacheSetting.json" />
+        <_ContentIncludedByDefault Remove="Configurations\FileSettings\Oto\Development\DatabaseSetting.json" />
+        <_ContentIncludedByDefault Remove="Configurations\FileSettings\Oto\Testing\CacheSetting.json" />
+        <_ContentIncludedByDefault Remove="Configurations\FileSettings\Oto\Testing\DatabaseSetting.json" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="Infrastructures\Configurations\FileSettings\Philkotse\Development\appsettings.Development.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\DVG.AP.Cms.CarInfo.GrpcPersistence\DVG.AP.Cms.CarInfo.GrpcPersistence.csproj" />
+        <ProjectReference Include="..\..\Core\DVG.AP.Cms.CarInfo.Application\DVG.AP.Cms.CarInfo.Application.csproj" />
+        <ProjectReference Include="..\..\Core\DVG.AP.Cms.CarInfo.Domain\DVG.AP.Cms.CarInfo.Domain.csproj" />
+        <ProjectReference Include="..\..\Infrastructure\DVG.AP.Cms.CarInfo.Infrastructure\DVG.AP.Cms.CarInfo.Infrastructure.csproj" />
+        <ProjectReference Include="..\..\Infrastructure\DVG.AP.Cms.CarInfo.Persistence\DVG.AP.Cms.CarInfo.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>
